@@ -1,5 +1,5 @@
-// Since Gulp does not load 'gulpfile.coffee' by default
-// This file is just a redirection to 'gulpfile.coffee'
+var requireDir = require('require-dir');
 
-require('coffee-script').register();
-require('./gulpfile.coffee');
+// Require all tasks in gulp/tasks, including subfolders
+requireDir('./gulp/tasks', { recurse: true });
+

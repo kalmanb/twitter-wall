@@ -7,6 +7,8 @@ module.exports =
     dest: './build/scripts'
   coffee:
     all: './scripts/**/*.coffee'
+  typescript: 
+    all: './scripts/**/*.ts'
   scss:
     bower: './bower_components/**/*.scss',
     all: './styles/**/*.scss'
