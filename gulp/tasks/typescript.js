@@ -3,6 +3,7 @@ var ts = require('gulp-typescript');
 //var eventStream = require('event-stream');
 var concat = require('gulp-concat-sourcemap');
 var sourcemaps = require('gulp-sourcemaps');
+var rimraf = require('gulp-rimraf');
 
 var tsProject = ts.createProject({
   declarationFiles: true,
@@ -36,3 +37,7 @@ var tsProject = ts.createProject({
   //gulp.watch('./app/**/*.ts', ['scripts']);
   //});
 
+gulp.task('clean:js', function() {
+  gulp.src('./build/js', { read: false }) // much faster
+  .pipe(rimraf({force: true}));
+})

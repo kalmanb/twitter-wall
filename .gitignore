@@ -5,3 +5,4 @@
 /test/build
 .sass-cache
 npm-debug.log
+.*.swp
