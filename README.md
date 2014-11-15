@@ -1,12 +1,21 @@
 ## Installation
 
-TBC
+    npm install
+    bower install
 
-### Update typescript defs
-
-    tsd update --save --overwrite
 
 ## Running locally
 
     gulp --watch
+
+## Tech
+* AngularJS
+* Typescript
+* SASS
+* Gulp
+* Lots of npm modules
+
+### Update typescript defs
+
+    tsd update --save --overwrite
 

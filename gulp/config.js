@@ -25,8 +25,8 @@ module.exports = {
     src: "./assets/img/**",
     dest: dest + "/img"
   },
-  markup: {
-    src: 'index.html',
+  html: {
+    src: "./app/**/*.html",
     dest: dest
   }
 }
