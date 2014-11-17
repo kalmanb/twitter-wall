@@ -43,11 +43,7 @@
     "gulp-plumber": "0.6.6",
     "gulp-rimraf": "0.1.1",
     "gulp-ng-annotate": "0.3.4",
-    "gulp-protractor": "0.0.11",
-    "gulp-header": "1.2.2",
-    "gulp-footer": "1.0.5",
     "gulp-karma": "0.0.4",
-    "gulp-svg-sprites": "1.0.3",
 
     "karma": "0.12.24",
     "karma-chrome-launcher": "0.1.5",
@@ -58,6 +54,9 @@
     "karma-phantomjs-launcher": "0.1.4",
     "karma-safari-launcher": "0.1.1",
     "karma-spec-reporter": "0.0.13",
+
+    "gulp-protractor": "0.0.11",
+    "gulp-protractor-qa": "0.1.17",
 
     "protractor": "1.4.0"
   }

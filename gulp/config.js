@@ -17,9 +17,13 @@ module.exports = {
     src: './assets/scss/**/*.scss',
     dest: dest + "/css"
   },
-  scripts: {
+  typescript: {
     src:  "./app/**/*.ts",
     dest: dest
+  },
+  testTypescript: {
+    src:  ["./app/**/test/**/*.ts", "./app/**/e2e/**/*.ts"],
+    dest: dest + "/test"
   },
   images: {
     src: "./assets/img/**",

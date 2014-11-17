@@ -7,9 +7,6 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      // '../bower_components/moment/min/moment-with-langs.js',
-      // '../bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js',
-      // '../bower_components/jquery/jquery.js',
       '../bower_components/lodash/dist/lodash.js',
       '../bower_components/angular/angular.js',
       '../bower_components/angular-mocks/angular-mocks.js',

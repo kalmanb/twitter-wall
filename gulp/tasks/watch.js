@@ -4,6 +4,5 @@ var config= require('../config');
 gulp.task('watch', ['setWatch', 'browserSync'], function() {
     gulp.watch(config.html.src, ['html']);
     gulp.watch(config.scss.src,   ['scss']);
-    gulp.watch(config.scripts.src, ['scripts']);
-    gulp.watch('./app/**/*.ts', ['scripts']);
+    gulp.watch(config.typescript.src, ['scripts']);
 });
