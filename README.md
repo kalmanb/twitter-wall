@@ -10,12 +10,8 @@
 
 ## Tech
 * AngularJS
-* Typescript
+* Traceur
 * SASS
 * Gulp
 * Lots of npm modules
-
-### Update typescript defs
-
-    tsd update --save --overwrite
 
