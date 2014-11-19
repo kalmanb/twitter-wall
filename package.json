@@ -38,11 +38,13 @@
     "gulp-plumber": "0.6.6",
     "gulp-rimraf": "0.1.1",
     "gulp-ng-annotate": "0.3.4",
-    "gulp-karma": "0.0.4",
 
     "gulp-browserify": "0.5.0",
     "gulp-traceur": "0.14.1",
 
+    "gulp-karma": "0.0.4",
+    "karma-browserify": "1.0.0",
+    "brfs": "1.2.0",
     "karma": "0.12.24",
     "karma-chrome-launcher": "0.1.5",
     "karma-html2js-preprocessor": "0.1.0",

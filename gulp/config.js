@@ -18,7 +18,6 @@ module.exports = {
     dest: dest + "/css"
   },
   scripts: {
-    src:  "./app/**/*.js",
     dest: dest + "/js"
   },
   images: {

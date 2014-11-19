@@ -3,26 +3,26 @@ module.exports = function(config) {
     // base path, that will be used to resolve files and exclude
     // basePath: '',
 
-    frameworks: ['jasmine'],
+    frameworks: ['browserify', 'jasmine'],
 
-    // list of files / patterns to load in the browser
     files: [
-      '../bower_components/lodash/dist/lodash.js',
-      '../bower_components/angular/angular.js',
-      '../bower_components/angular-mocks/angular-mocks.js',
-      '../bower_components/angular-animate/angular-animate.js',
-      '../bower_components/angular-sanitize/angular-sanitize.js',
-      '../bower_components/angular-ui-router/release/angular-ui-router.js',
-      '../bower_components/angucomplete-alt/angucomplete-alt.js',
-      '../bower_components/chance/chance.js',
-      '../build/scripts/**/*.js',
-      '../templates/**/*.html',
-      '../test/build/unit/**/*.js'
+      '../build/js/**/*.js',
+      '../app/**/*.html',
+      '../app/**/test/**/*.js'
     ],
 
     preprocessors: {
-      '**/*.html': 'html2js'
+      '**/*.html': 'html2js',
+      '../app/**/test/**/*.js': [ 'browserify' ]
     },
+    //TODO - add coverage
+
+    // browsify config
+    browserify: {
+      debug: true,
+      transform: [ 'brfs' ]
+    },
+
 
     // list of files to exclude
     exclude: [],
