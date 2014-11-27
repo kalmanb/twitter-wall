@@ -6,5 +6,6 @@ module.exports = function($scope) {
     {"text": "one"},
     {"text": "two"}
   ];
+
 };
 

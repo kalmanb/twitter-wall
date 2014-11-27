@@ -6,20 +6,20 @@ var config = require('../config');
 
 gulp.task('clean:unit', function() {
   gulp.src("./app/**/test/**/*.js", {read: false})
-    .pipe(rimraf());
+  .pipe(rimraf());
 });
 
 gulp.task('unit', function () {
-    return karma.server.start({
-        configFile: __dirname + '/../../config/karma.conf.js',
-        singleRun: true
-      });
+  return karma.server.start({
+    configFile: __dirname + '/../../config/karma.conf.js',
+    singleRun: true
+  });
 });
 
 gulp.task('unit:watch', function() {
-    return karma.server.start({
-        configFile: __dirname + '/../../config/karma.conf.js',
-      });
+  return karma.server.start({
+    configFile: __dirname + '/../../config/karma.conf.js',
+  });
 });
 
 

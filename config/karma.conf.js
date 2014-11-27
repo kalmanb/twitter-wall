@@ -3,7 +3,7 @@ module.exports = function(config) {
     // base path, that will be used to resolve files and exclude
     // basePath: '',
 
-    frameworks: ['browserify', 'jasmine'],
+    frameworks: ['jasmine', 'traceur'],
 
     files: [
       '../build/js/**/*.js',
@@ -13,7 +13,7 @@ module.exports = function(config) {
 
     preprocessors: {
       '**/*.html': 'html2js',
-      '../app/**/test/**/*.js': [ 'browserify' ]
+      '../app/**/test/**/*.js': [ 'traceur' ]
     },
     //TODO - add coverage
 
@@ -23,6 +23,20 @@ module.exports = function(config) {
       transform: [ 'brfs' ]
     },
 
+
+    // default configuration, not required
+    traceurPreprocessor: {
+      // options passed to the traceur-compiler
+      // see traceur --longhelp for list of options
+      options: {
+        sourceMaps: false,
+        modules: 'commonjs'
+      },
+      // custom filename transformation function
+      //transformPath: function(path) {
+        //return path.replace(/\.es6$/, '.js');
+      //}
+    },
 
     // list of files to exclude
     exclude: [],
@@ -60,7 +74,7 @@ module.exports = function(config) {
     // - Opera
     // - Safari
     // - PhantomJS
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
