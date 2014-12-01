@@ -3,7 +3,7 @@ exports.config = {
   // seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
 
   // If we want to start/stop Selenium at each test
-  seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.43.1.jar',
+  seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.44.0.jar',
 
   specs: [],
 
