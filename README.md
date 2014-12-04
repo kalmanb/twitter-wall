@@ -1,7 +1,6 @@
 ## Installation
 
     npm install
-    bower install
     gulp e2e:update
 
 
