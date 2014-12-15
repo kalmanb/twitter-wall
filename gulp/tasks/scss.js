@@ -1,12 +1,11 @@
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
-var rimraf = require('gulp-rimraf');
 
-var handleErrors = require('../util/handleErrors');
-
-var config = require('../config').scss;
 
 gulp.task('scss', function () {
+  var sass = require('gulp-ruby-sass');
+  var handleErrors = require('../util/handleErrors');
+  var config = require('../config').scss;
+
   return gulp.src(config.src)
   .pipe(sass())
   .on('error', handleErrors)
@@ -14,6 +13,8 @@ gulp.task('scss', function () {
 });
 
 gulp.task('clean:scss', function() {
+  var rimraf = require('gulp-rimraf');
+
   gulp.src('./build/css', { read: false }) // much faster
   .pipe(rimraf({force: true}));
 })

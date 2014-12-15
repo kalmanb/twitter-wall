@@ -1,10 +1,11 @@
 var gulp = require('gulp');
-var browserify = require('gulp-browserify');
-var traceur = require('gulp-traceur');
 
-var config = require('../config');
 
 gulp.task('scripts', function() {
+  var browserify = require('gulp-browserify');
+  var traceur = require('gulp-traceur');
+  var config = require('../config');
+
   gulp.src('./app/app.js', { read: false })
   .pipe(browserify({
     insertGlobals : true,

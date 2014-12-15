@@ -1,9 +1,10 @@
 var gulp       = require('gulp');
-var protractor = require("gulp-protractor").protractor;
-var child_process = require('child_process');
-var path = require('path');
 
 gulp.task('e2e', function () {
+  var protractor = require("gulp-protractor").protractor;
+  var child_process = require('child_process');
+  var path = require('path');
+
   gulp.src(["./app/**/e2e/**/*.js"])
   .pipe(protractor({
     configFile: "config/protractor.config.js",

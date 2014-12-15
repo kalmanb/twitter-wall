@@ -1,8 +1,14 @@
 var gulp  = require('gulp');
-var config= require('../config');
+
+
+gulp.task('setWatch', function() {
+  global.isWatching = true;
+});
 
 gulp.task('watch', ['setWatch', 'browserSync'], function() {
-    gulp.watch(config.html.src, ['html']);
-    gulp.watch(config.scss.src,   ['scss']);
-    gulp.watch(config.scripts.src, ['scripts']);
+  var config= require('../config');
+
+  gulp.watch(config.html.src, ['html']);
+  gulp.watch(config.scss.src,   ['scss']);
+  gulp.watch(config.scripts.src, ['scripts']);
 });
