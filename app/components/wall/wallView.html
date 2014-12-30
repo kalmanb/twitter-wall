@@ -1,6 +1,6 @@
-<div ng-controller="WallCtrl" class="wall">
+<div ng-controller="WallCtrl as wall" class="wall">
 <ul>
-  <li ng-repeat="tweet in tweets">
+  <li ng-repeat="tweet in wall.tweets">
     <span>{{tweet.text}}</span>
   </li>
 </ul>
