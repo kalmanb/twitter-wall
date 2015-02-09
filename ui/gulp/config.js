@@ -1,10 +1,8 @@
 var build = './build/';
 
-var web = {
-  base: './web/'
-}
+var web = {};
 
-web.assets = web.base + 'assets/'
+web.assets = 'assets/'
 
 web.dest = {
   dir: build + 'web/',
@@ -12,12 +10,12 @@ web.dest = {
 };
 
 web.scss = {
-  src: web.base + 'assets/scss/**/*.scss',
+  src: 'assets/scss/**/*.scss',
   dest: web.dest.dir + 'css/'
 };
 
 web.scripts = {
-  dir: web.base + 'app/',
+  dir: 'app/',
   dest: web.dest.dir + 'js/'
 };
 
@@ -27,7 +25,7 @@ web.images = {
 };
 
 web.html = {
-  src: web.base + 'app/**/*.html',
+  src: 'app/**/*.html',
   dest: web.dest.dir
 };
 
@@ -44,23 +42,7 @@ var browserSync = {
   ]
 };
 
-var server = {
-  base : './server',
-};
-
-server.scripts = {
-  src: server.base + '/**/*.js',
-  root: server.base + '/server.js'
-};
-
-server.scripts.dest = {
-  dir: build + 'server/',
-  js: build + 'server/**/*.js',
-  root: build + 'server/server.js'
-};
-
 module.exports = {
   web: web,
   browserSync: browserSync,
-  server: server
 }
