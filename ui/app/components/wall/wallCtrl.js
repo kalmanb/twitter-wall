@@ -6,7 +6,7 @@ module.exports = function($q) {
   var self = this;
 
   later.promise
-  .then(function() {
+  .then( () => {
     self.tweets = [
       {"text": "one"},
       {"text": "two"}

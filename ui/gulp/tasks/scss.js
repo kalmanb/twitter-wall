@@ -4,7 +4,7 @@ var gulp = require('gulp');
 gulp.task('scss', function () {
   var sass = require('gulp-ruby-sass');
   var handleErrors = require('../util/handleErrors');
-  var config = require('../config').scss;
+  var config = require('../config').web.scss;
 
   return gulp.src(config.src)
   .pipe(sass())

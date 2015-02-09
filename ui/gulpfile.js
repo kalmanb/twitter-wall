@@ -10,5 +10,5 @@ requireDir('./gulp/tasks', { recurse: true });
 gulp.task('default', ['watch']);
 gulp.task('build', ['scripts', 'scss', 'images', 'html']);
 gulp.task('test', ['unit', 'e2e']);
-gulp.task('clean', ['clean:html', 'clean:js', 'clean:scss'])
+gulp.task('clean', ['clean:html', 'clean:js', 'clean:scss']);
 

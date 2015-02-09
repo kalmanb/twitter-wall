@@ -1,4 +1,4 @@
-var gulp       = require('gulp');
+var gulp = require('gulp');
 
 gulp.task('e2e', function () {
   var protractor = require("gulp-protractor").protractor;

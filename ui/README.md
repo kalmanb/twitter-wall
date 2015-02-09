@@ -23,8 +23,8 @@
 
 ## Tech
 * AngularJS
-* Traceur
-* SASS
+* ES6 - 6to5
+* Stylus
 * Gulp
 * Lots of npm modules
 

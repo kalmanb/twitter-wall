@@ -6,6 +6,6 @@ gulp.task('protractor-qa', function() {
 
   protractorQA.init({
     testSrc : './app/**/e2e/**/*.js',
-    viewSrc : config.html.src
+    viewSrc : config.web.html.src
   });
 }); 

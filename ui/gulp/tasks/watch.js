@@ -1,12 +1,11 @@
-var gulp  = require('gulp');
-
+var gulp = require('gulp');
 
 gulp.task('setWatch', function() {
   global.isWatching = true;
 });
 
 gulp.task('watch', ['setWatch', 'browserSync'], function() {
-  var config= require('../config');
+  var config= require('../config').web;
 
   gulp.watch(config.html.src, ['html']);
   gulp.watch(config.scss.src,   ['scss']);
