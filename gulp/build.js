@@ -19,7 +19,7 @@ gulp.task('partials', ['markups'], function () {
       quotes: true
     }))
     .pipe($.angularTemplatecache('templateCacheHtml.js', {
-      module: 'tweeterWall'
+      module: 'twitterWall'
     }))
     .pipe(gulp.dest(paths.tmp + '/partials/'));
 });

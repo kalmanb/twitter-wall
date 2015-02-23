@@ -3,7 +3,7 @@
 describe('controllers', function(){
   var scope;
 
-  beforeEach(module('tweeterWall'));
+  beforeEach(module('twitterWall'));
 
   beforeEach(inject(function($rootScope) {
     scope = $rootScope.$new();
